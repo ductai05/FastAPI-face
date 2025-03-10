@@ -8,10 +8,10 @@ pkgs.mkShell {
     python3Packages.face-recognition
     python3Packages.python-multipart
     python3Packages.numpy
-    # Thêm các thư viện Python khác cần thiết
+    # add other python libs
   ];
   shellHook = ''
-    # Có thể đặt các biến môi trường ở đây nếu cần
+    # add environment variable
     echo "FastAPI development environment activated"
     echo "$ uvicorn face_check:app --reload"
   '';
