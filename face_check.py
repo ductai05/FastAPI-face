@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Hello": "Thís is DucTai"}
 
 @app.post("/verify")
 async def verify_face(file1: UploadFile = File(...), file2: UploadFile = File(...)):

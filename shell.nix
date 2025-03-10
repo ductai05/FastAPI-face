@@ -13,6 +13,6 @@ pkgs.mkShell {
   shellHook = ''
     # add environment variable
     echo "FastAPI development environment activated"
-    echo "$ uvicorn face_check:app --reload"
+    echo "$ uvicorn face_check:app --reload --host 127.0.0.1 --port 8000"
   '';
 }
