@@ -8,6 +8,7 @@ pkgs.mkShell {
     python3Packages.face-recognition
     python3Packages.python-multipart
     python3Packages.numpy
+    nodejs_23
     # add other python libs
   ];
   shellHook = ''

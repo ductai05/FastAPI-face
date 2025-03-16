@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition System</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="login">Đăng nhập</button>
+            <button class="tab-btn" data-tab="register">Đăng ký</button>
+            <button class="tab-btn" data-tab="face">Quản lý khuôn mặt</button>
+        </div>
+
+        <div class="tab-content active" id="login">
+            <h2>Đăng nhập</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="Tên đăng nhập" name="username" required>
+                <input type="password" placeholder="Mật khẩu" name="password" required>
+                <button type="submit">Đăng nhập</button>
+            </form>
+            <div class="face-verify-section">
+                <h3>Hoặc đăng nhập bằng khuôn mặt</h3>
+                <input type="text" id="faceLoginUsername" placeholder="Tên đăng nhập">
+                <input type="file" id="faceLoginInput" accept="image/*">
+                <button onclick="verifyFace()">Xác thực khuôn mặt</button>
+            </div>
+        </div>
+
+        <div class="tab-content" id="register">
+            <h2>Đăng ký</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Tên đăng nhập" name="username" required>
+                <input type="password" placeholder="Mật khẩu" name="password" required>
+                <button type="submit">Đăng ký</button>
+            </form>
+        </div>
+
+        <div class="tab-content" id="face">
+            <h2>Thêm khuôn mặt</h2>
+            <form id="faceForm">
+                <input type="text" placeholder="Tên đăng nhập" name="username" required>
+                <input type="password" placeholder="Mật khẩu" name="password" required>
+                <input type="file" name="face" accept="image/*" required>
+                <button type="submit">Lưu khuôn mặt</button>
+            </form>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html> 
